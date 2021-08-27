@@ -1,0 +1,14 @@
+
+creating an travel agency website with 5 sections
+('Home, About Us, Destinations, Services,  Contact') all of the 5 sections
+designs are responsive! ! !.. + 2 more pages registration(form) and destinations
+***Home section will include a nav-bar and a video
+in the background
+***About us section will include explanation 
+of the business model...
+***destinations section will include a carrousel, its interactive
+ and navigate through a list images by clicking the button right or left !!
+***Services section will just include some of the company services in
+a animated boxes
+***the last section will include a validated form by
+JavaScript, and some social media icons ... 

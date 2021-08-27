@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleReg.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo"><span>T</span>r<span>a</span>v<span>e</span>l <span>w</span>i<span>t</span>h <span>u</span>s</div>
+            <ul class="menu-area">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./destinations.html">Destinations</a></li>
+                <li  class="active"><a href="#">registration</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="contact-sec">
+            <form id="form" class="contact-form" >
+                <input id="name" type="text" class="contact-form-text" placeholder="Your name">
+                <input id="lastName" type="text" class="contact-form-text" placeholder="Your last name">
+                <input id="email" type="email" class="contact-form-text" placeholder="Your email">
+                <input id="phone" type="text" class="contact-form-text" placeholder="Your phone">
+                <input id="town1" type="text" class="contact-form-text" placeholder="Town">   
+                <input id="region" type="text" class="contact-form-text" placeholder="Region">
+                <input  type="text" class="contact-form-text" placeholder="Postcode / Zip">
+                <select id="op2" class="option1">
+                    <option value="CC">Country</option>
+                    <option value="CO">Tunisia</option>
+                    <option value="KM">U.S.A</option>
+                    <option value="CG">France</option>
+                    <option value="CD">Italy</option>
+                    <option value="CK">Cook Islands</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CI">Germany</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CW">Latvia</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Latvia</option>
+                    <option value="DJ">Netherlands</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">South Africa</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egypt</option>                      
+                </select>
+                <select id="op3" class="option1">
+                    <option value="">Choose your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <input class="option1" type="date" id="birthday" name="birthday">
+                <input type="submit" class="contact-form-btn" value="Send">
+                <div id="error" class="error-name"></div>
+            </form>
+        </div>
+    </section>
+    <script src="register.js"></script>
+</body>
+</html>

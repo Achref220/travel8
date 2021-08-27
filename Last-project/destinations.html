@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./StyleDes.css">
+    <link rel="icon" href="./images/airplane-icon.jpg" type="image/x-icon">
+    <title>Destinations</title>
+</head>
+<body>
+    <header class="fix" id="home1">
+            <video width="1000px" src="./video/production ID_5189561.mp4" class="vid-bg" autoplay loop muted></video>
+        <div class="nav-bar">
+            <div class="logo"><span>T</span>r<span>a</span>v<span>e</span>l <span>w</span>i<span>t</span>h <span>u</span>s</div>
+            <ul class="menu-area">
+                <li><a href="./index.html">Home</a></li>
+                <li class="active"><a href="./destinations.html">Destinations</a></li>
+                <li><a href="./registration.html">registration</a></li>
+            </ul>
+        </div>
+        <div class="banner-text">
+            <h2>Destinations ✈︎</h2>
+        <!-- <p>It’s a big world out there, it would be a shame not to experience it !</p> -->
+        </div>        
+    </header>
+        <div class="bannerVideo" id="sliderShow">
+            <video src="./video/video.mp4" autoplay loop muted class="active" width="700px"></video>
+            <video src="./video/production ID_5077580.mp4" autoplay loop muted  width="700px"></video>
+            <video src="./video/pexels-alvaro-lama-5238445.mp4" autoplay loop muted  width="700px"></video>
+            <video src="./video/maldives.mp4" autoplay loop muted ></video>
+        </div>
+    <section class="c">
+        <div class="container">               
+            <div class="content">
+                <div class="bannerText" id="sliderShowText">
+                    <div class="active">
+                        <h2>France</h2>
+                        <p>voluptatum obcaecati libero, temporibus unde eum porro animi,
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, praesentium debitis
+                            earum dignissimos voluptates rerumenim esse magni accusantium officia eos quas!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum enim consequatur quis, 
+                            magnam debitis fuga temporibus nemo sapiente
+                            architecto placeat excepturi laboriosam sint, rerum et commodi inventore repudiandae magni nulla!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsa esse
+                            voluptatibus expedita nam optio ad nulla error impedit!
+                            Esse tempora perferendis totam itaque illum deleniti vitae suscipit qui hic
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quisquam reprehenderit
+                            adipisicing elit. Facilis quisquam 
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Russia</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, praesentium debitis
+                            voluptatum obcaecati libero, temporibus unde eum porro animi,
+                            enim esse magni accusantium officia eos quas earum dignissimos voluptates rerum?
+                            magnam debitis fuga temporibus nemo sapiente
+                            architecto placeat excepturi laboriosam sint, rerum et commodi inventore repudiandae magni nulla!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsa esse
+                            voluptatibus expedita nam optio ad nulla error impedit!
+                            Esse tempora perferendis totam itaque illum deleniti vitae suscipit qui hic
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quisquam reprehenderit
+                            earum quas suscipit hic quibusdam explicabo repellat, tempore 
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>spain</h2>
+                        <p>Itaque, praesentium debitiselit quas earum
+                            voluptatum obcaecati libero, temporibus unde eum porro animi,
+                            enim esse magni accusantium officia eosLorem dignissimos voluptates rerum? ipsum dolor sit amet consectetur adipisicing  
+                            magnam debitis fuga temporibus nemo sapiente
+                            architecto placeat excepturi laboriosam sint, rerum et commodi inventore repudiandae magni nulla!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsa esse
+                            voluptatibus expedita nam optio ad nulla error impedit!
+                            Esse tempora perferendis totam itaque illum deleniti vitae suscipit qui hic
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quisquam reprehenderit
+                            earum quas suscipit hic quibusdam explicabo repellat, tempore
+                            Lorem ipsum dolor, sit amet consectetur 
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Maldives</h2>
+                        <p> debitis
+                            voluptatum obcaecati libero, temporibus unde eum porro animi,Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, praesentium
+                            enim esse magni accusantium officia eos quas earum dignissimos voluptates 
+                            magnam debitis fuga temporibus nemo sapiente
+                            architecto placeat excepturi laboriosam sint, rerum et commodi inventore repudiandae magni nulla!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsa esse
+                            voluptatibus expedita nam optio ad nulla error impedit!
+                            Esse tempora perferendis totam itaque illum deleniti vitae suscipit qui hic
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quisquam reprehenderit
+                            earum quas suscipit hic quibusdam explicabo repellat, tempore expedita nam optio ad nulla
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <ul class="controls">
+                <li onclick="prevSlide();prevSlideText();"><</li>
+                <li onclick="nextSlide();nextSlideText();">></li>
+            </ul>
+        </div>
+    </section>
+    <script defer>
+        const sliderShow = document.getElementById('sliderShow');
+        const slides = sliderShow.getElementsByTagName('video');
+        var index = 0;
+
+        function nextSlide(){
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }
+        function prevSlide(){
+            slides[index].classList.remove('active');
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add('active');
+        }
+
+
+
+        const sliderShowText = document.getElementById('sliderShowText');
+        const slidesText = sliderShowText.getElementsByTagName('div');
+        var i = 0;
+
+        function nextSlideText(){
+            slidesText[i].classList.remove('active');
+            i = (i + 1) % slidesText.length;
+            slidesText[i].classList.add('active');
+        }
+        function prevSlideText(){
+            slidesText[i].classList.remove('active');
+            i = (i - 1 + slidesText.length) % slidesText.length;
+            slidesText[i].classList.add('active');
+        }
+    </script>
+</body>
+</html>
